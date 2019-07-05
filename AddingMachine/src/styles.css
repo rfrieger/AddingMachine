@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2627&q=80);
+    align-content: center;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+#input {
+    width: 70%;
+}
+
+#result {
+   height: 400px;
+   overflow: scroll;
+  text-overflow: ellipsis;
+}

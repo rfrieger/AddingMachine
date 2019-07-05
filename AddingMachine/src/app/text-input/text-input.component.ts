@@ -8,7 +8,8 @@ import { Evaluator } from "../../../evaluator";
 })
 export class TextInputComponent implements OnInit {
 
-  result: number; 
+  result: string = ""; 
+  
   evaluator : Evaluator= new Evaluator()
 
   constructor() { }
@@ -17,7 +18,8 @@ export class TextInputComponent implements OnInit {
   }
 
   doCalculations(val: string) {
-    this.result =this.evaluator.calcs(val)
+    this.result += ">" + val + "\n";
+    this.result += ">>" + this.evaluator.calcs(val) + "\n"
   }
 }
 

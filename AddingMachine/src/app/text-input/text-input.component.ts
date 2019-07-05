@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Evaluator } from "../../../evaluator";
 
 @Component({
   selector: 'app-text-input',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextInputComponent implements OnInit {
 
+  result: number; 
+  evaluator : Evaluator= new Evaluator()
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  doCalculations(val: string) {
+    this.result =this.evaluator.calcs(val)
+  }
 }
+
+
